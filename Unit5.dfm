@@ -1,0 +1,122 @@
+object frmModificationInfosSpecifiquesAutres: TfrmModificationInfosSpecifiquesAutres
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Crisegest - Modification des informations sp'#233'cifiques'
+  ClientHeight = 218
+  ClientWidth = 641
+  Color = clBtnFace
+  Constraints.MaxHeight = 256
+  Constraints.MaxWidth = 657
+  Constraints.MinHeight = 256
+  Constraints.MinWidth = 657
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbNombreVictimes: TLabel
+    Left = 24
+    Top = 24
+    Width = 85
+    Height = 13
+    Caption = 'Nombre victimes :'
+  end
+  object lbTranchesAgeVictimes: TLabel
+    Left = 24
+    Top = 64
+    Width = 121
+    Height = 13
+    Caption = 'Tranches d'#39#226'ge victimes :'
+  end
+  object lbProtectionPersonnelSoin: TLabel
+    Left = 24
+    Top = 104
+    Width = 158
+    Height = 13
+    Caption = 'Protection du personnel de soin :'
+  end
+  object lbSitesSensiblesVoisins: TLabel
+    Left = 392
+    Top = 24
+    Width = 111
+    Height = 13
+    Caption = 'Sites sensibles voisins :'
+  end
+  object edNombreVictimes: TEdit
+    Left = 200
+    Top = 21
+    Width = 145
+    Height = 21
+    TabOrder = 0
+  end
+  object cbTranchesAgeVictimes: TComboBox
+    Left = 200
+    Top = 61
+    Width = 145
+    Height = 21
+    AutoDropDown = True
+    Style = csDropDownList
+    TabOrder = 1
+    Items.Strings = (
+      '-10 ans'
+      '10-18 ans'
+      '18-24 ans'
+      '24-32 ans'
+      '32-40 ans'
+      '40-52 ans'
+      '52-64 ans'
+      '+64 ans')
+  end
+  object meSitesSensiblesVoisins: TMemo
+    Left = 392
+    Top = 61
+    Width = 225
+    Height = 61
+    TabOrder = 3
+  end
+  object cbProtectionPersonnelSoin: TComboBox
+    Left = 200
+    Top = 101
+    Width = 145
+    Height = 21
+    AutoDropDown = True
+    Style = csDropDownList
+    TabOrder = 2
+    Items.Strings = (
+      'N'#233'cessaire'
+      'Non n'#233'cessaire')
+  end
+  object bpValider: TButton
+    Left = 144
+    Top = 160
+    Width = 97
+    Height = 33
+    Caption = 'Valider'
+    TabOrder = 4
+    OnClick = bpValiderClick
+  end
+  object bpAnnuler: TButton
+    Left = 272
+    Top = 160
+    Width = 97
+    Height = 33
+    Caption = 'Annuler'
+    TabOrder = 5
+    OnClick = bpAnnulerClick
+  end
+  object bpAide: TButton
+    Left = 400
+    Top = 160
+    Width = 97
+    Height = 33
+    Caption = 'Aide'
+    TabOrder = 6
+    OnClick = bpAideClick
+  end
+end

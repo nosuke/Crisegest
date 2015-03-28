@@ -1,0 +1,64 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm4 = class(TForm)
+    lbTypeVehicule: TLabel;
+    lbEtatVehicule: TLabel;
+    lbAutresCaracteristiques: TLabel;
+    lbTypeRoute: TLabel;
+    lbLocalisation: TLabel;
+    lbConditionsAtmospheriques: TLabel;
+    cbTypeVehicule: TComboBox;
+    cbEtatVehicule: TComboBox;
+    cbAutresCaracteristiques: TComboBox;
+    cbTypeRoute: TComboBox;
+    cbLocalisation: TComboBox;
+    cbConditionsAtmospheriques: TComboBox;
+    bpValider: TButton;
+    bpAnnuler: TButton;
+    bpAide: TButton;
+    procedure bpValiderClick(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  frmModificationInfosSpecifiquesAccident: TfrmModificationInfosSpecifiquesAccident;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1;
+
+
+procedure TForm4.bpValiderClick(Sender: TObject);
+begin
+  Unit1.frmFenetrePrincipale.lbTypeCriseMod.Caption := cbTypeCrise.Text;
+  Unit1.frmFenetrePrincipale.lbGraviteMod.Caption := edGravite.Text;
+  Unit1.frmFenetrePrincipale.lbEffetAssocieMod.Caption := edEffetAssocie.Text;
+  Unit1.frmFenetrePrincipale.lbHomogeneiteMod.Caption := edHomogeneite.Text;
+  Unit1.frmFenetrePrincipale.lbLegeresMod.Caption := edLegeres.Text;
+  Unit1.frmFenetrePrincipale.lbGravesMod.Caption := edGraves.Text;
+  Unit1.frmFenetrePrincipale.lbMortesMod.Caption := edMortes.Text;
+
+  Unit1.frmFenetrePrincipale.bpTypeCrise.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpGravite.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpEffetAssocie.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpHomogeneite.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpLegeres.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpGraves.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpMortes.Enabled := True;
+
+  frmModificationInfosSpecifiquesAccident.Close;
+end;
+
+end.

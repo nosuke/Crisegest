@@ -1,0 +1,40 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm4 = class(TForm)
+    lbTypeVehicule: TLabel;
+    lbEtatVehicule: TLabel;
+    lbAutresCaracteristiques: TLabel;
+    lbTypeRoute: TLabel;
+    lbLocalisation: TLabel;
+    lbConditionsAtmospheriques: TLabel;
+    cbTypeVehicule: TComboBox;
+    cbEtatVehicule: TComboBox;
+    cbAutresCaracteristiques: TComboBox;
+    cbTypeRoute: TComboBox;
+    cbLocalisation: TComboBox;
+    cbConditionsAtmospheriques: TComboBox;
+    bpValider: TButton;
+    bpAnnuler: TButton;
+    bpAide: TButton;
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.dfm}
+
+
+end.

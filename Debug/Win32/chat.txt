@@ -1,0 +1,4 @@
+Police --> Attention !
+Pompier --> Il y a le feu !
+SAMU --> Où ça ?!
+Police --> Partout !

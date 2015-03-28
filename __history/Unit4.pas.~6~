@@ -1,0 +1,62 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmModificationInfosSpecifiquesAccident = class(TForm)
+    lbTypeVehicule: TLabel;
+    lbEtatVehicule: TLabel;
+    lbAutresCaracteristiques: TLabel;
+    lbTypeRoute: TLabel;
+    lbLocalisation: TLabel;
+    lbConditionsAtmospheriques: TLabel;
+    cbTypeVehicule: TComboBox;
+    cbEtatVehicule: TComboBox;
+    cbAutresCaracteristiques: TComboBox;
+    cbTypeRoute: TComboBox;
+    cbLocalisation: TComboBox;
+    cbConditionsAtmospheriques: TComboBox;
+    bpValider: TButton;
+    bpAnnuler: TButton;
+    bpAide: TButton;
+    procedure bpValiderClick(Sender: TObject);
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  frmModificationInfosSpecifiquesAccident: TfrmModificationInfosSpecifiquesAccident;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1;
+
+
+procedure TfrmModificationInfosSpecifiquesAccident.bpValiderClick(Sender: TObject);
+begin
+  Unit1.frmFenetrePrincipale.lbTypeVehiculeMod.Caption := cbTypeVehicule.Text;
+  Unit1.frmFenetrePrincipale.lbTypeRouteMod.Caption := cbTypeRoute.Text;
+  Unit1.frmFenetrePrincipale.lbLocalisation2Mod.Caption := cbLocalisation.Text;
+  Unit1.frmFenetrePrincipale.lbConditionsAtmospheriquesMod.Caption := cbConditionsAtmospheriques.Text;
+  Unit1.frmFenetrePrincipale.lbAutresCaracteristiquesMod.Caption := cbAutresCaracteristiques.Text;
+  Unit1.frmFenetrePrincipale.lbEtatVehiculeMod.Caption := cbEtatVehicule.Text;
+
+  Unit1.frmFenetrePrincipale.bpTypeVehicule.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpTypeRoute.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpLocalisation2.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpConditionsAtmospheriques.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpAutresCaracteristiques.Enabled := True;
+  Unit1.frmFenetrePrincipale.bpEtatVehicule.Enabled := True;
+
+  frmModificationInfosSpecifiquesAccident.Close;
+end;
+
+end.

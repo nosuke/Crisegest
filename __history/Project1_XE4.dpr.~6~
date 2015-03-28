@@ -1,0 +1,15 @@
+program Project1_XE4;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {frmFenetrePrincipale},
+  Unit2 in 'Unit2.pas' {frmAjoutTache};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmFenetrePrincipale, frmFenetrePrincipale);
+  Application.Run;
+end.

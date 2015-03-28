@@ -1,0 +1,221 @@
+object frmModificationInfosGenerales: TfrmModificationInfosGenerales
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Crisegest - Modification des informations g'#233'n'#233'rales'
+  ClientHeight = 345
+  ClientWidth = 633
+  Color = clBtnFace
+  Constraints.MaxHeight = 383
+  Constraints.MaxWidth = 649
+  Constraints.MinHeight = 383
+  Constraints.MinWidth = 649
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbCrise: TLabel
+    Left = 24
+    Top = 24
+    Width = 32
+    Height = 16
+    Caption = 'Crise'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbTypeCrise: TLabel
+    Left = 64
+    Top = 64
+    Width = 56
+    Height = 13
+    Caption = 'Type crise :'
+  end
+  object lbGravite: TLabel
+    Left = 64
+    Top = 94
+    Width = 42
+    Height = 13
+    Caption = 'Gravit'#233' :'
+  end
+  object lbEffetAssocie: TLabel
+    Left = 64
+    Top = 124
+    Width = 69
+    Height = 13
+    Caption = 'Effet associ'#233' :'
+  end
+  object lbHomogeneite: TLabel
+    Left = 64
+    Top = 154
+    Width = 70
+    Height = 13
+    Caption = 'Homog'#233'n'#233'it'#233' :'
+  end
+  object lbVictimes: TLabel
+    Left = 344
+    Top = 24
+    Width = 67
+    Height = 16
+    Caption = 'Victimes'#8230
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbLegeres: TLabel
+    Left = 414
+    Top = 64
+    Width = 54
+    Height = 13
+    Caption = #8230' l'#233'g'#232'res :'
+  end
+  object lbGraves: TLabel
+    Left = 414
+    Top = 94
+    Width = 52
+    Height = 13
+    Caption = #8230' graves :'
+  end
+  object lbMortes: TLabel
+    Left = 414
+    Top = 124
+    Width = 52
+    Height = 13
+    Caption = #8230' mortes :'
+  end
+  object lbLocalisation: TLabel
+    Left = 24
+    Top = 224
+    Width = 76
+    Height = 16
+    Caption = 'Localisation'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbLongitude: TLabel
+    Left = 148
+    Top = 226
+    Width = 54
+    Height = 13
+    Caption = 'Longitude :'
+  end
+  object lbLatitude: TLabel
+    Left = 420
+    Top = 226
+    Width = 46
+    Height = 13
+    Caption = 'Latitude :'
+  end
+  object cbTypeCrise: TComboBox
+    Left = 148
+    Top = 61
+    Width = 129
+    Height = 21
+    AutoDropDown = True
+    Style = csDropDownList
+    TabOrder = 0
+    Items.Strings = (
+      'Accident de la route'
+      'Incendie'
+      'Explosion'
+      'Mouvement de foule'
+      'Acte terroriste'
+      'Accident NRBC'
+      'Inondation')
+  end
+  object edGravite: TEdit
+    Left = 148
+    Top = 91
+    Width = 129
+    Height = 21
+    TabOrder = 1
+  end
+  object edEffetAssocie: TEdit
+    Left = 148
+    Top = 121
+    Width = 129
+    Height = 21
+    TabOrder = 2
+  end
+  object edHomogeneite: TEdit
+    Left = 148
+    Top = 151
+    Width = 129
+    Height = 21
+    TabOrder = 3
+  end
+  object edLegeres: TEdit
+    Left = 488
+    Top = 61
+    Width = 121
+    Height = 21
+    TabOrder = 4
+  end
+  object edGraves: TEdit
+    Left = 488
+    Top = 91
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+  object edMortes: TEdit
+    Left = 488
+    Top = 121
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+  object edLongitude: TEdit
+    Left = 232
+    Top = 223
+    Width = 121
+    Height = 21
+    TabOrder = 7
+  end
+  object edLatitude: TEdit
+    Left = 488
+    Top = 223
+    Width = 121
+    Height = 21
+    TabOrder = 8
+  end
+  object bpValider: TButton
+    Left = 128
+    Top = 288
+    Width = 105
+    Height = 33
+    Caption = 'Valider'
+    TabOrder = 9
+    OnClick = bpValiderClick
+  end
+  object bpAnnuler: TButton
+    Left = 264
+    Top = 288
+    Width = 105
+    Height = 33
+    Caption = 'Annuler'
+    TabOrder = 10
+  end
+  object bpAide: TButton
+    Left = 400
+    Top = 288
+    Width = 105
+    Height = 33
+    Caption = 'Aide'
+    TabOrder = 11
+  end
+end

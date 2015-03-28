@@ -1,0 +1,11 @@
+Liens intéressants :
+
+- http://theroadtodelphi.wordpress.com/2010/08/07/using-the-google-maps-api-v3-from-delphi-part-i-basic-functionality/
+- http://www.touraineverte.com/google-maps-weather-library/carte-google-affiche-meteo-previsions-quatre-jours.html
+- https://developers.google.com/maps/documentation/javascript/layers#WeatherLayer
+- http://www.youtube.com/watch?v=_PJdZjM2oTw
+- http://stackoverflow.com/questions/558686/use-googlemap-from-my-delphi-application
+- http://javascript.developpez.com/faq/google-maps/?page=Marker
+- https://developers.google.com/maps/documentation/javascript/reference?hl=fr#Marker
+- http://delphi.developpez.com/faq/?page=compopropri
+- http://www.festra.com/eng/index.html

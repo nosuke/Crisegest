@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.517,z:\RAD Studio\Projets\Project1.dproj=E:\Secugest\Project1.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.264,=z:\RAD Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.095,z:\RAD Studio\Projets\Unit1.dfm=E:\Secugest\Unit1.dfm</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.753,=z:\RAD Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.095,z:\RAD Studio\Projets\Unit1.pas=E:\Secugest\Unit1.pas</Transaction>
+    <Transaction>2013/05/24 17:03:52.000.132,C:\Users\Florent\Desktop\projet EG23\Project1_XE4.dproj=C:\Users\Florent\Desktop\projet EG23\Project1.dproj</Transaction>
+    <Transaction>2013/05/31 16:37:11.000.519,=C:\Users\Florent\Desktop\UTT\Cours\S2\EG23 - Interface Homme-Machine et ergonomie\Projet\Crisegest\Unit2.pas</Transaction>
+    <Transaction>2013/06/02 04:23:04.000.440,=C:\Users\Florent\Desktop\UTT\Cours\S2\EG23 - Interface Homme-Machine et ergonomie\Projet\Crisegest\Unit2.pas</Transaction>
+    <Transaction>2013/06/07 07:12:39.000.912,=C:\Users\Florent\Desktop\UTT\Cours\S2\EG23 - Interface Homme-Machine et ergonomie\Projet\Crisegest\Unit3.pas</Transaction>
+    <Transaction>2013/06/07 07:15:19.000.626,=C:\Users\Florent\Desktop\UTT\Cours\S2\EG23 - Interface Homme-Machine et ergonomie\Projet\Crisegest\Unit4.pas</Transaction>
+    <Transaction>2013/06/07 20:41:29.000.722,=C:\Users\Florent\Desktop\UTT\Cours\S2\EG23 - Interface Homme-Machine et ergonomie\Projet\Crisegest\Unit4.pas</Transaction>
+    <Transaction>2013/06/08 14:31:09.000.883,=C:\Users\Florent\Desktop\UTT\Cours\S2\EG23 - Interface Homme-Machine et ergonomie\Projet\Crisegest\Unit5.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,14 @@
+program Project1_XE4;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {frmCrisegest};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmCrisegest, frmCrisegest);
+  Application.Run;
+end.

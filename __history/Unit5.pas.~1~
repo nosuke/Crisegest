@@ -1,0 +1,35 @@
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmModificationInfosSpecifiquesAutres = class(TForm)
+    lbNombreVictimes: TLabel;
+    edNombreVictimes: TEdit;
+    lbTranchesAgeVictimes: TLabel;
+    cbTranchesAgeVictimes: TComboBox;
+    lbProtectionPersonnelSoin: TLabel;
+    lbSitesSensiblesVoisins: TLabel;
+    meSitesSensiblesVoisins: TMemo;
+    cbProtectionPersonnelSoin: TComboBox;
+    bpValider: TButton;
+    bpAnnuler: TButton;
+    bpAide: TButton;
+  private
+    { Déclarations privées }
+  public
+    { Déclarations publiques }
+  end;
+
+var
+  frmModificationInfosSpecifiquesAutres: TfrmModificationInfosSpecifiquesAutres;
+
+implementation
+
+{$R *.dfm}
+
+end.
